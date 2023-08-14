@@ -26,7 +26,7 @@ def generate_voice_over(splitted_output: list, output_dir: str) -> float:
     sentences = nltk.sent_tokenize(output_text)
 
     GEN_TEMP = 0.7
-    SPEAKER = "v2/en_speaker_2"
+    SPEAKER = "v2/ru_speaker_0"
     silence = np.zeros(int(0.25 * SAMPLE_RATE))  # quarter second of silence
     pieces = []
     for sentence in sentences:
